@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/andrelucas/Documents/Pessoal/CleanMacSystem/cleanMacForDevsWebPage -type f -name *.json -o -name *.yaml -o -name *.yml -o -name *.html -o -name *.toml)",
+      "Bash(ls -la /Users/andrelucas/Documents/Pessoal/CleanMacSystem/cleanMacForDevsWebPage/*.yaml)",
+      "Bash(flutter gen-l10n:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(flutter build:*)",
+      "Bash(git init:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
