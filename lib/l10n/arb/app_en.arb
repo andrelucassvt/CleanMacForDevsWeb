@@ -8,7 +8,7 @@
     "@heroTitle": {
         "description": "Hero section main headline"
     },
-    "heroSubtitle": "A macOS app that removes build artifacts, caches, and dependency folders from your development projects. Supports Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native, and React.",
+    "heroSubtitle": "A macOS app that removes build artifacts, caches, including Gradle caches, and dependency folders from your development projects. Supports Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native, and React.",
     "@heroSubtitle": {
         "description": "Hero section subtitle"
     },
@@ -56,7 +56,7 @@
     "@rustDesc": { "description": "Rust cleanup description" },
     "androidName": "Android",
     "@androidName": { "description": "Android technology name" },
-    "androidDesc": "Removes .gradle/, build/, app/build/, .kotlin/, captures/ and .cxx/ NDK artifacts.",
+    "androidDesc": "Removes Gradle caches in .gradle/, build/, app/build/, .kotlin/, captures/ and .cxx/ NDK artifacts.",
     "@androidDesc": { "description": "Android cleanup description" },
     "reactNativeName": "React Native",
     "@reactNativeName": { "description": "React Native technology name" },
