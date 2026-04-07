@@ -1,6 +1,6 @@
 {
     "@@locale": "en",
-    "appTitle": "CleanMacForDevs",
+    "appTitle": "Cleaner for Devs",
     "@appTitle": {
         "description": "The application title"
     },

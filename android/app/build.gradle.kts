@@ -52,17 +52,17 @@ android {
         create("production") {
             dimension = "default"
             applicationIdSuffix = ""
-            manifestPlaceholders["appName"] = "CleanMacForDevsWeb"
+            manifestPlaceholders["appName"] = "Cleaner for Devs"
         }
         create("staging") {
             dimension = "default"
             applicationIdSuffix = ".stg"
-            manifestPlaceholders["appName"] = "[STG] CleanMacForDevsWeb"
+            manifestPlaceholders["appName"] = "[STG] Cleaner for Devs"
         }
         create("development") {
             dimension = "default"
             applicationIdSuffix = ".dev"
-            manifestPlaceholders["appName"] = "[DEV] CleanMacForDevsWeb"
+            manifestPlaceholders["appName"] = "[DEV] Cleaner for Devs"
         }
     }
 

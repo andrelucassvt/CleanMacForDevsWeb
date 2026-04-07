@@ -1,6 +1,6 @@
 {
     "@@locale": "pt",
-    "appTitle": "CleanMacForDevs",
+    "appTitle": "Cleaner for Devs",
     "heroTitle": "Recupere seu espaço em disco",
     "heroSubtitle": "Um app para macOS que remove artefatos de build, caches, incluindo caches do Gradle, e pastas de dependências dos seus projetos de desenvolvimento. Suporta Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native e React.",
     "featureCleanAll": "Limpa todos os projetos selecionados de uma vez",

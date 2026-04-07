@@ -16,7 +16,7 @@ class FooterSection extends StatelessWidget {
       child: Column(
         children: [
           const Text(
-            'CleanMacForDevs',
+            'Cleaner for Devs',
             style: TextStyle(
               color: Colors.white,
               fontSize: 24,

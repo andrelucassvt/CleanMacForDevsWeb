@@ -30,7 +30,7 @@ extension IterableExtensions<T> on Iterable<T> {
 
 @immutable
 class AppConstants {
-  static const String appName = 'Base App';
+  static const String appName = 'Cleaner for Devs';
   static const String appVersion = '1.0.0';
 
   // Timeouts

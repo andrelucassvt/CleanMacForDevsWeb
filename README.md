@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="CleanMacForDevs/Assets.xcassets/AppIcon.appiconset/CleanMacForDevs-iOS-Default-1024x1024@1x.png" alt="Clean Mac for Devs icon" width="150"/>
+  <img src="CleanMacForDevs/Assets.xcassets/AppIcon.appiconset/CleanMacForDevs-iOS-Default-1024x1024@1x.png" alt="Cleaner for Devs icon" width="150"/>
 </div>
 
 
-# Clean Mac for Devs
+# Cleaner for Devs
 
 A macOS app that helps developers reclaim disk space by removing build artifacts, caches, and dependency folders from their projects. Supports **Flutter, Xcode, Node.js, Python, Rust, Android, React Native, and React**.
 

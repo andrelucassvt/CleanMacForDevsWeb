@@ -1,6 +1,6 @@
 {
-    "name": "CleanMacForDevs",
-    "short_name": "CleanMacForDevs",
+    "name": "Cleaner for Devs",
+    "short_name": "Cleaner for Devs",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

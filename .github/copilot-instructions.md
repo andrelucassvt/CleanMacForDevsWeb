@@ -1,4 +1,4 @@
-# GitHub Copilot Instructions — Clean Mac for Devs Landing Page
+# GitHub Copilot Instructions — Cleaner for Devs Landing Page
 
 Este arquivo é lido pelo Copilot e fornece contexto e regras do projeto.
 
@@ -6,9 +6,9 @@ Este arquivo é lido pelo Copilot e fornece contexto e regras do projeto.
 
 ## Contexto
 
-**Projeto**: Clean Mac for Devs — Landing Page  
+**Projeto**: Cleaner for Devs — Landing Page  
 **Pacote**: `base_app`  
-**Descrição**: Web app Flutter que serve como landing page para o app macOS "Clean Mac for Devs"  
+**Descrição**: Web app Flutter que serve como landing page para o app macOS "Cleaner for Devs"  
 **Flutter SDK**: ^3.35.0 | **Dart SDK**: ^3.9.0  
 **Plataformas**: Web (deploy principal), Android, iOS  
 **iOS target**: 14.0 | **Android**: `flutter.minSdkVersion`  

@@ -500,7 +500,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,7 +595,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,7 +685,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -780,7 +780,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "[DEV] CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "[DEV] Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -873,7 +873,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "[DEV] CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "[DEV] Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -965,7 +965,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "[DEV] CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "[DEV] Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1060,7 +1060,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "[STG] CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "[STG] Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1155,7 +1155,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "[STG] CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "[STG] Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1245,7 +1245,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = QNW59SGYAU;
 				ENABLE_BITCODE = NO;
-				FLAVOR_APP_NAME = "[STG] CleanMacForDevsWeb";
+				FLAVOR_APP_NAME = "[STG] Cleaner for Devs";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

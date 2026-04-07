@@ -2,9 +2,9 @@
 
 ## Sobre Este Projeto
 
-**Nome**: Clean Mac for Devs — Landing Page  
+**Nome**: Cleaner for Devs — Landing Page  
 **Pacote Flutter**: `base_app`  
-**Descrição**: Web app (landing page) do app macOS "Clean Mac for Devs" — ferramenta que ajuda desenvolvedores a liberar espaço em disco removendo artefatos de build e caches de projetos Flutter, Xcode, Node.js, Python, Rust, Android, React Native e React.  
+**Descrição**: Web app (landing page) do app macOS "Cleaner for Devs" — ferramenta que ajuda desenvolvedores a liberar espaço em disco removendo artefatos de build e caches de projetos Flutter, Xcode, Node.js, Python, Rust, Android, React Native e React.  
 **Flutter SDK**: ^3.35.0 | **Dart SDK**: ^3.9.0  
 **Plataformas**: Web (deploy principal), Android, iOS  
 **iOS target**: 14.0 | **Android**: `flutter.minSdkVersion`  
