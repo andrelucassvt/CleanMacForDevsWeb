@@ -56,6 +56,11 @@ class TechnologiesSection extends StatelessWidget {
         icon: Icons.web,
         color: const Color(0xFF61DAFB),
       ),
+      _TechItem(
+        name: l10n.dockerName,
+        icon: Icons.inventory_2,
+        color: const Color(0xFF2496ED),
+      ),
     ];
 
     return Container(
@@ -86,8 +91,8 @@ class TechnologiesSection extends StatelessWidget {
               final crossAxisCount = constraints.maxWidth >= 900
                   ? 4
                   : constraints.maxWidth >= 600
-                      ? 3
-                      : 2;
+                  ? 3
+                  : 2;
               return GridView.count(
                 crossAxisCount: crossAxisCount,
                 shrinkWrap: true,
@@ -238,8 +243,7 @@ class _TechCardState extends State<_TechCard>
                     width: 52,
                     height: 52,
                     decoration: BoxDecoration(
-                      color: widget.item.color
-                          .withValues(alpha: 0.1 + t * 0.1),
+                      color: widget.item.color.withValues(alpha: 0.1 + t * 0.1),
                       shape: BoxShape.circle,
                     ),
                     child: Icon(

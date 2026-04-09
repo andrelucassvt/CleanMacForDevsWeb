@@ -8,7 +8,7 @@
     "@heroTitle": {
         "description": "Hero section main headline"
     },
-    "heroSubtitle": "A macOS app that removes build artifacts, caches, including Gradle caches, and dependency folders from your development projects. Supports Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native, and React.",
+    "heroSubtitle": "A macOS app that removes build artifacts, caches, including Gradle caches, and dependency folders from your development projects. Supports Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native, React, and Docker.",
     "@heroSubtitle": {
         "description": "Hero section subtitle"
     },
@@ -16,7 +16,7 @@
     "@featureCleanAll": { "description": "Hero feature bullet: batch clean" },
     "featureSpacePreview": "See exactly how much disk space is freed",
     "@featureSpacePreview": { "description": "Hero feature bullet: space preview" },
-    "featureSupportedTechs": "Supports 9 technologies out of the box",
+    "featureSupportedTechs": "Supports 10 technologies out of the box",
     "@featureSupportedTechs": { "description": "Hero feature bullet: tech count" },
     "downloadButton": "Download on the App Store",
     "@downloadButton": {
@@ -70,6 +70,10 @@
     "@reactName": { "description": "React technology name" },
     "reactDesc": "Deletes node_modules/, build/, dist/, .next/, .cache/, storybook-static/ and more.",
     "@reactDesc": { "description": "React cleanup description" },
+    "dockerName": "Docker",
+    "@dockerName": { "description": "Docker technology name" },
+    "dockerDesc": "Removes unused images, build cache, stopped containers and dangling volumes to free disk space.",
+    "@dockerDesc": { "description": "Docker cleanup description" },
     "screenshot1Title": "Welcome Screen",
     "@screenshot1Title": { "description": "Screenshot 1 title" },
     "screenshot1Desc": "Browse your project directories and select the technology to clean",
@@ -105,5 +109,7 @@
     "cancelButton": "Cancel",
     "@cancelButton": { "description": "Cancel button label" },
     "okButton": "OK",
-    "@okButton": { "description": "OK button label" }
+    "@okButton": { "description": "OK button label" },
+    "heroAppStoreBadge": "Top 7 on the Mac App Store",
+    "@heroAppStoreBadge": { "description": "Badge showing App Store ranking" }
 }

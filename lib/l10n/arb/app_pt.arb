@@ -2,10 +2,10 @@
     "@@locale": "pt",
     "appTitle": "Cleaner for Devs",
     "heroTitle": "Recupere seu espaço em disco",
-    "heroSubtitle": "Um app para macOS que remove artefatos de build, caches, incluindo caches do Gradle, e pastas de dependências dos seus projetos de desenvolvimento. Suporta Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native e React.",
+    "heroSubtitle": "Um app para macOS que remove artefatos de build, caches, incluindo caches do Gradle, e pastas de dependências dos seus projetos de desenvolvimento. Suporta Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native, React e Docker.",
     "featureCleanAll": "Limpa todos os projetos selecionados de uma vez",
     "featureSpacePreview": "Veja exatamente quanto espaço em disco é liberado",
-    "featureSupportedTechs": "Suporta 9 tecnologias prontas para usar",
+    "featureSupportedTechs": "Suporta 10 tecnologias prontas para usar",
     "downloadButton": "Baixar na App Store",
     "featuresTitle": "Tecnologias suportadas",
     "screenshotsTitle": "Veja em ação",
@@ -28,6 +28,8 @@
     "swiftDesc": "Remove o diretório .build/ gerado pelo Swift Package Manager, que armazena artefatos compilados e dependências.",
     "reactName": "React",
     "reactDesc": "Apaga node_modules/, build/, dist/, .next/, .cache/, storybook-static/ e mais.",
+    "dockerName": "Docker",
+    "dockerDesc": "Remove imagens não utilizadas, cache de build, containers parados e volumes pendentes para liberar espaço em disco.",
     "screenshot1Title": "Tela de boas-vindas",
     "screenshot1Desc": "Navegue pelos diretórios de projetos e selecione a tecnologia para limpar",
     "screenshot6Title": "Análise geral",
@@ -45,5 +47,6 @@
     "genericErrorMessage": "Ocorreu um erro. Tente novamente.",
     "retryButton": "Tentar novamente",
     "cancelButton": "Cancelar",
-    "okButton": "OK"
+    "okButton": "OK",
+    "heroAppStoreBadge": "Top 7 na Mac App Store"
 }

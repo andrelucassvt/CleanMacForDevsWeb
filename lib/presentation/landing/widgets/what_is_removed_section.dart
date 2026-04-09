@@ -65,6 +65,12 @@ class WhatIsRemovedSection extends StatelessWidget {
         icon: Icons.web,
         color: const Color(0xFF61DAFB),
       ),
+      _CleanItem(
+        name: l10n.dockerName,
+        desc: l10n.dockerDesc,
+        icon: Icons.inventory_2,
+        color: const Color(0xFF2496ED),
+      ),
     ];
 
     return Container(
@@ -271,8 +277,7 @@ class _CleanCardState extends State<_CleanCard>
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black
-                        .withValues(alpha: 0.04 + t * 0.08),
+                    color: Colors.black.withValues(alpha: 0.04 + t * 0.08),
                     blurRadius: 12 + t * 12,
                     offset: Offset(0, 4 + t * 6),
                   ),
