@@ -61,6 +61,16 @@ class TechnologiesSection extends StatelessWidget {
         icon: Icons.inventory_2,
         color: const Color(0xFF2496ED),
       ),
+      _TechItem(
+        name: l10n.gradleCacheName,
+        icon: Icons.storage,
+        color: const Color(0xFF02A88F),
+      ),
+      _TechItem(
+        name: l10n.npmGlobalName,
+        icon: Icons.public,
+        color: const Color(0xFFCB3837),
+      ),
     ];
 
     return Container(

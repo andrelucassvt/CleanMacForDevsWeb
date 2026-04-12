@@ -71,6 +71,18 @@ class WhatIsRemovedSection extends StatelessWidget {
         icon: Icons.inventory_2,
         color: const Color(0xFF2496ED),
       ),
+      _CleanItem(
+        name: l10n.gradleCacheName,
+        desc: l10n.gradleCacheDesc,
+        icon: Icons.storage,
+        color: const Color(0xFF02A88F),
+      ),
+      _CleanItem(
+        name: l10n.npmGlobalName,
+        desc: l10n.npmGlobalDesc,
+        icon: Icons.public,
+        color: const Color(0xFFCB3837),
+      ),
     ];
 
     return Container(

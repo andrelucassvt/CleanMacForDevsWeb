@@ -6,6 +6,8 @@ import 'package:base_app/presentation/landing/view_model/landing_cubit.dart';
 import 'package:base_app/presentation/landing/view_model/landing_state.dart';
 import 'package:base_app/presentation/landing/widgets/footer_section.dart';
 import 'package:base_app/presentation/landing/widgets/hero_section.dart';
+import 'package:base_app/presentation/landing/widgets/how_it_works_section.dart';
+import 'package:base_app/presentation/landing/widgets/menu_bar_section.dart';
 import 'package:base_app/presentation/landing/widgets/screenshots_section.dart';
 import 'package:base_app/presentation/landing/widgets/technologies_section.dart';
 import 'package:base_app/presentation/landing/widgets/what_is_removed_section.dart';
@@ -44,8 +46,10 @@ class _LandingViewState extends State<LandingView> {
                       children: [
                         HeroSection(),
                         TechnologiesSection(),
+                        HowItWorksSection(),
                         ScreenshotsSection(),
                         WhatIsRemovedSection(),
+                        MenuBarSection(),
                         FooterSection(),
                       ],
                     ),
