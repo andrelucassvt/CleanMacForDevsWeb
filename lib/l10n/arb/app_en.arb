@@ -118,7 +118,7 @@
     "@cancelButton": { "description": "Cancel button label" },
     "okButton": "OK",
     "@okButton": { "description": "OK button label" },
-    "heroAppStoreBadge": "Top 7 on the Mac App Store",
+    "heroAppStoreBadge": "Top 4 on the Mac App Store",
     "@heroAppStoreBadge": { "description": "Badge showing App Store ranking" },
     "howItWorksTitle": "How It Works",
     "@howItWorksTitle": { "description": "How It Works section title" },
