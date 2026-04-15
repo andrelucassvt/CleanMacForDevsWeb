@@ -41,17 +41,19 @@ class _LandingViewState extends State<LandingView> {
             builder: (context, state) {
               return const Stack(
                 children: [
-                  SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        HeroSection(),
-                        TechnologiesSection(),
-                        HowItWorksSection(),
-                        ScreenshotsSection(),
-                        WhatIsRemovedSection(),
-                        MenuBarSection(),
-                        FooterSection(),
-                      ],
+                  SelectionArea(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          HeroSection(),
+                          TechnologiesSection(),
+                          HowItWorksSection(),
+                          ScreenshotsSection(),
+                          WhatIsRemovedSection(),
+                          MenuBarSection(),
+                          FooterSection(),
+                        ],
+                      ),
                     ),
                   ),
                   Positioned(
