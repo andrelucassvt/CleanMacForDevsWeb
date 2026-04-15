@@ -17,6 +17,10 @@ class HeroSection extends StatefulWidget {
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
+    await FirebaseAnalytics.instance.logEvent(
+      name: 'app_store_button_tapped',
+      parameters: {'source': 'hero_section'},
+    );
   }
 
   @override
