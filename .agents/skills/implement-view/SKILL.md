@@ -105,32 +105,23 @@ class _ProfileViewState extends State<ProfileView> {
           top: false, // AppBar já protege o topo
           child: BlocBuilder<ProfileCubit, ProfileState>(
             // Sem bloc: _cubit — obtido via BlocProvider acima
-            builder: (context, state) {
-              if (state is ProfileLoading) {
-                return const Center(child: CircularProgressIndicator());
-              }
-
-              if (state is ProfileError) {
-                return Center(
-                  child: Text(state.message, style: const TextStyle(color: Colors.red)),
-                );
-              }
-
-              if (state is ProfileLoaded) {
-                return Padding(
+            builder: (context, state) => switch (state) {
+              ProfileLoading() => const Center(child: CircularProgressIndicator()),
+              ProfileError(:final message) => Center(
+                  child: Text(message, style: const TextStyle(color: Colors.red)),
+                ),
+              ProfileLoaded(:final name, :final email) => Padding(
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('${l10n.profileNameLabel} ${state.name}'),
+                      Text('${l10n.profileNameLabel} $name'),
                       const SizedBox(height: 8),
-                      Text('${l10n.profileEmailLabel} ${state.email}'),
+                      Text('${l10n.profileEmailLabel} $email'),
                     ],
                   ),
-                );
-              }
-
-              return const SizedBox.shrink();
+                ),
+              ProfileInitial() => const SizedBox.shrink(),
             },
           ),
         ),
@@ -312,18 +303,21 @@ inject.registerFactory<ProfileCubit>(() => ProfileCubit(inject()));
 ### View com Lista
 
 ```dart
-if (state is ProfileLoaded) {
-  return ListView.builder(
-    itemCount: state.items.length,
-    itemBuilder: (context, index) {
-      final item = state.items[index];
-      return ListTile(
-        title: Text(item.name),
-        onTap: () => _cubit.selectItem(item),
-      );
-    },
-  );
-}
+builder: (context, state) => switch (state) {
+  ProfileLoaded(:final items) => ListView.builder(
+      itemCount: items.length,
+      itemBuilder: (context, index) {
+        final item = items[index];
+        return ListTile(
+          title: Text(item.name),
+          onTap: () => context.read<ProfileCubit>().selectItem(item),
+        );
+      },
+    ),
+  ProfileLoading() => const Center(child: CircularProgressIndicator()),
+  ProfileError(:final message) => Center(child: Text(message)),
+  ProfileInitial() => const SizedBox.shrink(),
+},
 ```
 
 ### View com BlocConsumer (listener + builder no mesmo bloc) ✅

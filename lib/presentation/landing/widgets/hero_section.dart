@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:base_app/common/styles/app_theme.dart';
 import 'package:base_app/l10n/l10n.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
