@@ -129,8 +129,8 @@ Scaffold(
 )
 
 // Sem AppBar / fullscreen
-SafeArea(
-  child: Scaffold(body: ...),
+Scaffold(
+  body: SafeArea(child: ...),
 )
 ```
 

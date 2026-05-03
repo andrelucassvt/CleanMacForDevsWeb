@@ -141,10 +141,11 @@ class _HomeViewState extends State<HomeView> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(title: Text(context.l10n.homeTitle)),
-        body: BlocBuilder<HomeCubit, HomeState>(
+    return Scaffold(
+      appBar: AppBar(title: Text(context.l10n.homeTitle)),
+      body: SafeArea(
+        top: false,
+        child: BlocBuilder<HomeCubit, HomeState>(
           bloc: _cubit,
           builder: (context, state) => switch (state) {
             HomeLoading() => const Center(child: CircularProgressIndicator()),

@@ -244,7 +244,44 @@ body: SafeArea(
 
 Métodos `Widget _buildXxx()` não têm `Element` próprio — toda mudança de estado reconstrói o bloco inteiro. Extraia para `widgets/` (reutilizável) ou `content/` (auxiliar específico da View).
 
-> Para exemplos detalhados de como extrair widgets corretamente, veja a skill `implement-widget`.
+### ❌ ERRADO — classe privada dentro do arquivo da View
+
+```dart
+// lib/presentation/profile/view/profile_view.dart   ← NUNCA faça isso
+class _ProfileHeader extends StatelessWidget {
+  const _ProfileHeader({required this.name});
+  final String name;
+
+  @override
+  Widget build(BuildContext context) => Text(name);
+}
+```
+
+### ✅ CORRETO — arquivo separado em `content/`
+
+Crie um arquivo **próprio** dentro de `content/`. A classe deve ser **pública** (sem `_`):
+
+```dart
+// lib/presentation/profile/content/profile_header.dart  ← arquivo separado
+import 'package:flutter/material.dart';
+
+class ProfileHeader extends StatelessWidget {
+  const ProfileHeader({super.key, required this.name});
+  final String name;
+
+  @override
+  Widget build(BuildContext context) => Text(name);
+}
+```
+
+Importe de volta na View com caminho **absoluto**:
+
+```dart
+// lib/presentation/profile/view/profile_view.dart
+import 'package:base_app/presentation/profile/content/profile_header.dart';
+// ...
+ProfileLoaded(:final name) => ProfileHeader(name: name),
+```
 
 ### ✅ EXCEÇÃO — Funções para Dialog e BottomSheet
 
@@ -426,6 +463,8 @@ BlocListener<ProfileCubit, ProfileState>(
 | Não implementar `dispose()` | `_cubit.close(); super.dispose()` |
 | Tratar apenas Loading e Loaded | Tratar Initial, Loading, Loaded, Error |
 | Strings hardcoded `Text('Salvar')` | `Text(l10n.saveButton)` |
+| `class _XxxContent` no arquivo da View | Criar `content/<feature>_xxx.dart` (classe pública) e importar com `package:base_app/...` |
+| `Widget _buildXxx()` no arquivo da View | Criar `content/<feature>_xxx.dart` (classe pública) e importar com `package:base_app/...` |
 
 ---
 
