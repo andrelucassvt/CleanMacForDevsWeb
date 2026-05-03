@@ -8,6 +8,7 @@ import 'package:base_app/presentation/landing/widgets/footer_section.dart';
 import 'package:base_app/presentation/landing/widgets/hero_section.dart';
 import 'package:base_app/presentation/landing/widgets/how_it_works_section.dart';
 import 'package:base_app/presentation/landing/widgets/menu_bar_section.dart';
+import 'package:base_app/presentation/landing/widgets/robot_pet_section.dart';
 import 'package:base_app/presentation/landing/widgets/screenshots_section.dart';
 import 'package:base_app/presentation/landing/widgets/technologies_section.dart';
 import 'package:base_app/presentation/landing/widgets/what_is_removed_section.dart';
@@ -50,6 +51,7 @@ class _LandingViewState extends State<LandingView> {
                           HowItWorksSection(),
                           ScreenshotsSection(),
                           WhatIsRemovedSection(),
+                          RobotPetSection(),
                           MenuBarSection(),
                           FooterSection(),
                         ],

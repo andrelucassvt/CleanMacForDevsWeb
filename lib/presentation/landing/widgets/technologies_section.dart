@@ -71,6 +71,16 @@ class TechnologiesSection extends StatelessWidget {
         icon: Icons.public,
         color: const Color(0xFFCB3837),
       ),
+      _TechItem(
+        name: l10n.ollamaName,
+        icon: Icons.smart_toy_rounded,
+        color: const Color(0xFF7C3AED),
+      ),
+      _TechItem(
+        name: l10n.javaMavenName,
+        icon: Icons.coffee_rounded,
+        color: const Color(0xFFED8B00),
+      ),
     ];
 
     return Container(

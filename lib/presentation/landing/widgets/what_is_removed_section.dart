@@ -83,6 +83,18 @@ class WhatIsRemovedSection extends StatelessWidget {
         icon: Icons.public,
         color: const Color(0xFFCB3837),
       ),
+      _CleanItem(
+        name: l10n.ollamaName,
+        desc: l10n.ollamaDesc,
+        icon: Icons.smart_toy_rounded,
+        color: const Color(0xFF7C3AED),
+      ),
+      _CleanItem(
+        name: l10n.javaMavenName,
+        desc: l10n.javaMavenDesc,
+        icon: Icons.coffee_rounded,
+        color: const Color(0xFFED8B00),
+      ),
     ];
 
     return Container(

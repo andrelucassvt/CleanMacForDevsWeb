@@ -8,7 +8,7 @@
     "@heroTitle": {
         "description": "Hero section main headline"
     },
-    "heroSubtitle": "A macOS app that removes build artifacts, caches, and dependency folders from your development projects. Supports Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native, React, Docker, Gradle Cache, and npm Global.",
+    "heroSubtitle": "A macOS app that removes build artifacts, caches, and dependency folders from your development projects. Supports Flutter, Xcode, Swift, Node.js, Python, Rust, Android, React Native, React, Docker, Ollama, Java/Maven, Gradle Cache, and npm Global.",
     "@heroSubtitle": {
         "description": "Hero section subtitle"
     },
@@ -16,7 +16,7 @@
     "@featureCleanAll": { "description": "Hero feature bullet: batch clean" },
     "featureSpacePreview": "See exactly how much disk space is freed",
     "@featureSpacePreview": { "description": "Hero feature bullet: space preview" },
-    "featureSupportedTechs": "Supports 12 technologies out of the box",
+    "featureSupportedTechs": "Supports 14 technologies out of the box",
     "@featureSupportedTechs": { "description": "Hero feature bullet: tech count" },
     "downloadButton": "Download on the App Store",
     "@downloadButton": {
@@ -165,5 +165,25 @@
     "menuBarBattery": "Battery",
     "@menuBarBattery": { "description": "Menu bar Battery stat label" },
     "menuBarBatteryDesc": "Charge level and charging state",
-    "@menuBarBatteryDesc": { "description": "Menu bar Battery stat description" }
+    "@menuBarBatteryDesc": { "description": "Menu bar Battery stat description" },
+    "ollamaName": "Ollama",
+    "@ollamaName": { "description": "Ollama technology name" },
+    "ollamaDesc": "Clears model blobs and manifest files from ~/.ollama/models to reclaim space from downloaded AI models.",
+    "@ollamaDesc": { "description": "Ollama cleanup description" },
+    "javaMavenName": "Java / Maven",
+    "@javaMavenName": { "description": "Java/Maven technology name" },
+    "javaMavenDesc": "Removes Maven local repository cache (~/.m2/repository) and Java build output directories like target/.",
+    "@javaMavenDesc": { "description": "Java/Maven cleanup description" },
+    "robotPetBadge": "Pet Companion",
+    "@robotPetBadge": { "description": "Badge label for robot pet section" },
+    "robotPetTitle": "Bring Your Cleaner to Life",
+    "@robotPetTitle": { "description": "Robot pet section title" },
+    "robotPetSubtitle": "Enable a tiny pixel robot that celebrates every time you reclaim disk space — because cleaning should be fun.",
+    "@robotPetSubtitle": { "description": "Robot pet section subtitle" },
+    "robotPetFeature1": "Celebrates every cleanup with a happy animation",
+    "@robotPetFeature1": { "description": "Robot pet feature bullet 1" },
+    "robotPetFeature2": "Toggle the companion on or off in Settings",
+    "@robotPetFeature2": { "description": "Robot pet feature bullet 2" },
+    "robotPetFeature3": "A fun touch to a productive workflow",
+    "@robotPetFeature3": { "description": "Robot pet feature bullet 3" }
 }
