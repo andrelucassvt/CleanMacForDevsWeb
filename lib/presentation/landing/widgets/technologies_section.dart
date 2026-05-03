@@ -106,32 +106,29 @@ class TechnologiesSection extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 56),
-          LayoutBuilder(
-            builder: (context, constraints) {
-              final crossAxisCount = constraints.maxWidth >= 900
-                  ? 4
-                  : constraints.maxWidth >= 600
-                  ? 3
-                  : 2;
-              return GridView.count(
-                crossAxisCount: crossAxisCount,
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                crossAxisSpacing: 16,
-                mainAxisSpacing: 16,
-                childAspectRatio: 1.3,
+          Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 1100),
+              child: Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 16,
+                runSpacing: 16,
                 children: techs
                     .asMap()
                     .entries
                     .map(
-                      (e) => _StaggeredCard(
-                        delay: Duration(milliseconds: e.key * 60),
-                        child: _TechCard(item: e.value),
+                      (e) => SizedBox(
+                        width: 160,
+                        height: 130,
+                        child: _StaggeredCard(
+                          delay: Duration(milliseconds: e.key * 60),
+                          child: _TechCard(item: e.value),
+                        ),
                       ),
                     )
                     .toList(),
-              );
-            },
+              ),
+            ),
           ),
         ],
       ),
