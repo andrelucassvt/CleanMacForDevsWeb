@@ -99,7 +99,7 @@ class WhatIsRemovedSection extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      color: Colors.white,
+      color: const Color(0xFFF8FAFC),
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
       child: Column(
         children: [
@@ -120,68 +120,32 @@ class WhatIsRemovedSection extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 56),
-          LayoutBuilder(
-            builder: (context, constraints) {
-              final isDesktop = constraints.maxWidth >= 700;
-              if (isDesktop) {
-                return _TwoColumnGrid(items: items);
-              }
-              return Column(
+          Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 1100),
+              child: Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 20,
+                runSpacing: 20,
                 children: items
                     .asMap()
                     .entries
                     .map(
-                      (e) => _StaggeredCleanCard(
-                        delay: Duration(milliseconds: e.key * 50),
-                        item: e.value,
+                      (e) => SizedBox(
+                        width: 340,
+                        child: _StaggeredCleanCard(
+                          delay: Duration(milliseconds: e.key * 50),
+                          item: e.value,
+                        ),
                       ),
                     )
                     .toList(),
-              );
-            },
+              ),
+            ),
           ),
         ],
       ),
     );
-  }
-}
-
-class _TwoColumnGrid extends StatelessWidget {
-  const _TwoColumnGrid({required this.items});
-
-  final List<_CleanItem> items;
-
-  @override
-  Widget build(BuildContext context) {
-    final rows = <Widget>[];
-    for (var i = 0; i < items.length; i += 2) {
-      rows.add(
-        IntrinsicHeight(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Expanded(
-                child: _StaggeredCleanCard(
-                  delay: Duration(milliseconds: i * 40),
-                  item: items[i],
-                ),
-              ),
-              const SizedBox(width: 16),
-              Expanded(
-                child: i + 1 < items.length
-                    ? _StaggeredCleanCard(
-                        delay: Duration(milliseconds: (i + 1) * 40),
-                        item: items[i + 1],
-                      )
-                    : const SizedBox.shrink(),
-              ),
-            ],
-          ),
-        ),
-      );
-      if (i + 2 < items.length) rows.add(const SizedBox(height: 16));
-    }
-    return Column(children: rows);
   }
 }
 
@@ -287,8 +251,6 @@ class _CleanCardState extends State<_CleanCard>
           return Transform.translate(
             offset: Offset(0, -4 * t),
             child: Container(
-              margin: const EdgeInsets.only(bottom: 16),
-              padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
@@ -307,7 +269,31 @@ class _CleanCardState extends State<_CleanCard>
                   ),
                 ],
               ),
-              child: child,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: IntrinsicHeight(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        width: 4,
+                        color: Color.lerp(
+                          widget.item.color.withValues(alpha: 0.3),
+                          widget.item.color,
+                          t,
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: child,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           );
         },
