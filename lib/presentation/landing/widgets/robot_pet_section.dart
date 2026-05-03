@@ -44,10 +44,13 @@ class _RobotPetSectionState extends State<RobotPetSection>
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFFF3F0FF), Color(0xFFEEF2FF)],
+          colors: [
+            Color(0xFFF3F0FF),
+            Color(0xFFEEF2FF),
+          ],
         ),
       ),
-      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
+      padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 24),
       child: LayoutBuilder(
         builder: (context, constraints) {
           final isDesktop = constraints.maxWidth >= 900;

@@ -100,7 +100,7 @@ class WhatIsRemovedSection extends StatelessWidget {
     return Container(
       width: double.infinity,
       color: const Color(0xFFF8FAFC),
-      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
+      padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 24),
       child: Column(
         children: [
           Text(
@@ -329,6 +329,8 @@ class _CleanCardState extends State<_CleanCard>
                   const SizedBox(height: 6),
                   Text(
                     widget.item.desc,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
